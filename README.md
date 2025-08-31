@@ -1,6 +1,6 @@
 # Gerald Nika - Software Engineer
 
-👋 Welcome to my GitHub Pages repository! I'm Gerald, a passionate Software Engineer with expertise in full-stack development, distributed systems, and software architecture.
+👋 Welcome to my GitHub Pages repository! I'm Gerald, a passionate Full-Stack Web Developer building scalable web apps with Angular, React, Node.js, Express.js and Laravel. I am experienced in creating reusable components, RESTful APIs, and optimizing performance.
 
 Feel free to explore my repositories and don't hesitate to reach out if you have any questions or collaboration ideas!
 
