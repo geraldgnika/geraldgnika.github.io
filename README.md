@@ -1,4 +1,4 @@
-# Gerald Nika - Software Engineer
+# Gerald Nika - Full-Stack Web Developer
 
 👋 Welcome to my GitHub Pages repository! I'm Gerald, a passionate Full-Stack Web Developer building scalable web apps with Angular, React, Node.js, Express.js and Laravel. I am experienced in creating reusable components, RESTful APIs, and optimizing performance.
 
