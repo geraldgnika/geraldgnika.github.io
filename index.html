@@ -1,274 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerald Nika - Full-Stack Web Developer</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: math;
-            font-size: large;
-        }
-        a {
-            text-decoration: none;
-        }
-        @media only screen and (max-width: 950px) {
-            .left-column {
-                position: relative !important;
-                width: -webkit-fill-available !important;
-            }
-            .right-column {
-                margin-left: 0 !important;
-            }
-            .gitrepo-section {
-                margin-top: 30px;
-            }
-        }
-        .cv-container {
-            overflow: hidden;
-        }
-        .left-column {
-            background-color: #274054;
-            color: #ffffff;
-            position: fixed;
-            height: -webkit-fill-available;
-            width: auto;
-            padding: 60px 70px;
-            text-align: center;
-            overflow-y: auto;
-        }
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 4%;
-            border: 4px solid #ffffff;
-            margin-bottom: 20px;
-        }
-        .right-column {
-            padding: 30px;
-            overflow-y: auto;
-            box-sizing: border-box;
-            position: relative;
-            margin-left: 461px;
-            word-break: break-word;
-            width: -webkit-fill-available;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        .skill-tag {
-            background-color: #e9ecef;
-            color: #495057;
-            padding: 5px 10px;
-            border-radius: 15px;
-            display: inline-block;
-            margin-bottom: 10px;
-        }
-        .contact-icon {
-            width: 20px;
-            text-align: center;
-            margin-right: 10px;
-        }
-        .pdf-link {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 10px 15px;
-            background-color: #ffffff;
-            color: #26312c;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        .pdf-link:hover {
-            background-color: #e9ecef;
-            color: #26312c;
-        }
-        p {
-            margin-bottom: 0.3rem !important;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerald Nika - Full-Stack Web Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
 </head>
-<body>
-    <div class="container-fluid">
-        <div class="row cv-container">
-            <div class="left-column">
-                <img src="profile-image.png" alt="Gerald Nika" class="profile-img">
-                <h1 class="mb-0">Gerald Nika</h1>
-                <h5 class="mb-4">Mid-Level Full-Stack Web Developer</h5>
-                <p><i class="fas fa-phone contact-icon"></i> +355 (0) 69 672 6810</p>
-                <p><i class="fas fa-envelope contact-icon"></i> geraldgnika@gmail.com</p>
-                <p><i class="fab fa-linkedin contact-icon"></i> <a href="https://www.linkedin.com/in/geraldgnika" target="_blank" class="text-white">in/geraldgnika</a></p>
-                <p><i class="fab fa-github contact-icon"></i> <a href="https://github.com/geraldgnika" target="_blank" class="text-white">github.com/geraldgnika</a></p>
-                <p><i class="fas fa-globe contact-icon"></i> <a href="https://geraldgnika.github.io" target="_blank" class="text-white">geraldgnika.github.io</a></p>
+<body class="bg-gray-50 text-gray-800 font-sans">
 
-                <a href="Gerald Nika - CV.pdf" target="_blank" class="pdf-link">
-                    <i class="far fa-file-pdf contact-icon"></i> Open CV as PDF
-                </a>
-                
-                <h3 class="mt-4 mb-3">Key Skills</h3>
-                <div>
-                    <span class="skill-tag">Angular</span>
-                    <span class="skill-tag">React</span>
-                    <span class="skill-tag">Node.js</span>
-                    <span class="skill-tag">Express.js</span>
-                    <span class="skill-tag">Laravel</span>
-                </div>
-                
-                <h3 class="mt-4 mb-3">Languages</h3>
-                <p>Albanian - Native</p>
-                <p>English - Advanced (C1 - IELTS Academic)</p>
-                <p>Turkish - Basic (A2)</p>
-            </div>
-            <div class="right-column">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="section">
-                            <h2><strong>About Me</strong></h2>
-                            <p>I build scalable web apps with Angular, React, Node.js, Express.js and Laravel. Experienced in creating reusable components, RESTful APIs, and optimizing performance.</p>
-                        </div>
+  <div class="flex min-h-screen">
+    <!-- Sidebar -->
+    <aside class="w-80 bg-gray-900 text-white flex-shrink-0 p-8 flex flex-col items-center">
+      <img src="profile-image.png" alt="Gerald Nika" class="w-36 h-36 object-cover rounded-xl border-4 border-white mb-6">
+      <h1 class="text-2xl font-bold mb-1 text-center">Gerald Nika</h1>
+      <h2 class="text-gray-300 text-sm mb-4 text-center">Full-Stack Web Developer</h2>
 
-                        <div class="section">
-                            <h2><strong>Experience</strong></h2>
-                            <h4>Freelance Full-Stack Web Developer</h4>
-                            <p class="text-muted">May 2024 – Jun 2025</p>
-                            <ul>
-                                <li>Full-stack web app with Angular, Node.js, and MongoDB for browsing, booking, and paying for events.</li>
-                                <li>Next.js and Firebase web app for searching recipes, planning meals, generating shopping lists, and managing user profiles.</li>
-                                <li>Laravel, Vue.js and MySQL web app for managing portfolios/blogs with media uploads, dynamic pages, and role-based access.</li>
-                                <li>React, Node.js and PostgreSQL web app for posting jobs and applying, with search, filtering, and dashboard analytics.</li>
-                            </ul>
+      <div class="text-sm space-y-2 mb-6">
+        <p><i class="fas fa-phone mr-2"></i>+355 69 672 6810</p>
+        <p><i class="fas fa-envelope mr-2"></i>geraldgnika@gmail.com</p>
+        <p><i class="fab fa-linkedin mr-2"></i><a href="https://www.linkedin.com/in/geraldgnika" target="_blank" class="hover:underline">in/geraldgnika</a></p>
+        <p><i class="fab fa-github mr-2"></i><a href="https://github.com/geraldgnika" target="_blank" class="hover:underline">github.com/geraldgnika</a></p>
+        <p><i class="fas fa-globe mr-2"></i><a href="https://geraldgnika.github.io" target="_blank" class="hover:underline">geraldgnika.github.io</a></p>
+      </div>
 
-                            <h4>Full-Stack Web Developer @ ARK IT</h4>
-                            <p class="text-muted">Tiranë, AL | Jan 2024 – May 2024</p>
-                            <ul>
-                                <li>Built a reusable web-based video player component using Node.js, Express.js, and Vue.js.</li>
-                                <li>Implemented CRUD for annotations, cue points, subtitles, live transcription, video upload, playlists, and thumbnail generation.</li>
-                                <li>Integrated video-js for playback and structured the project in a mono-repo architecture for multi-project use.</li>
-                                <li>Explored Python & PyTorch for supervised learning, fine-tuning GPT models, and AI experimentation.</li>
-                            </ul>
+      <a href="Gerald Nika - CV.pdf" target="_blank" class="mt-2 px-4 py-2 bg-white text-gray-900 rounded-lg hover:bg-gray-200 transition">Open CV</a>
 
-                            <h4>Back-End Web Developer @ ArkEvo Group</h4>
-                            <p class="text-muted">Tiranë, AL | Jan 2023 – Jan 2024</p>
-                            <ul>
-                                <li>Developed 3 client CRMs end-to-end with Laravel, including invoicing, reporting, and admin dashboards.</li>
-                                <li>Implemented roles/permissions and notification systems using Laravel Spatie.</li>
-                                <li>Integrated DataTables for advanced data management and 3CX for real-time communications.</li>
-                                <li>Added task tracking and real-time notifications for improved process management.</li>
-                            </ul>
-
-                            <h4>Full-Stack Web Developer @ IT-Works</h4>
-                            <p class="text-muted">Tiranë, AL | Nov 2021 – Jan 2023</p>
-                            <ul>
-                                <li>Contributed to an insurance management portal using Angular, Django REST, and Ionic, fixing bugs and adding features.</li>
-                                <li>Built an Ionic mobile app for a judicial platform.</li>
-                            </ul>
-
-                            <h4>Full-Stack Web Developer @ New Media Communications</h4>
-                            <p class="text-muted">Tiranë, AL | Jun 2020 – Nov 2021</p>
-                            <ul>
-                                <li>Developed dynamic front-end interfaces with Angular and Angular Material.</li>
-                                <li>Built back-end systems with Laravel, improving integration and reliability.</li>
-                                <li>Created custom Bootstrap themes for consistent branding and UX.</li>
-                            </ul>
-                        </div>
-
-                        <div class="section">
-                            <h2><strong>Education</strong></h2>
-                            <h4>Bachelor of Engineering in Software Engineering @ Canadian Institute of Technology</h4>
-                            <p class="text-muted">Tiranë, AL | Oct 2017 – Jun 2020</p>
-                        </div>
-
-                        <div class="section mb-0">
-                            <h2><strong>Skills</strong></h2>
-                            <h4>Programming & Scripting</h4>
-                            <div>
-                                <span class="skill-tag">JavaScript</span>
-                                <span class="skill-tag">TypeScript</span>
-                                <span class="skill-tag">Python</span>
-                                <span class="skill-tag">PHP</span>
-                                <span class="skill-tag">SQL</span>
-                                <span class="skill-tag">HTML</span>
-                                <span class="skill-tag">CSS</span>
-                            </div>
-                            <h4 class="mt-3">Front-End</h4>
-                            <div>
-                                <span class="skill-tag">Angular</span>
-                                <span class="skill-tag">React.js</span>
-                                <span class="skill-tag">Vue.js</span>
-                                <span class="skill-tag">Ionic</span>
-                                <span class="skill-tag">Next.js</span>
-                                <span class="skill-tag">Tailwind CSS</span>
-                                <span class="skill-tag">Responsive UI/UX</span>
-                                <span class="skill-tag">Performance Optimization</span>
-                            </div>
-                            <h4 class="mt-3">Back-End</h4>
-                            <div>
-                                <span class="skill-tag">Node.js</span>
-                                <span class="skill-tag">Express.js</span>
-                                <span class="skill-tag">Laravel</span>
-                                <span class="skill-tag">Django REST Framework</span>
-                                <span class="skill-tag">Prisma ORM</span>
-                                <span class="skill-tag">Firebase</span>
-                                <span class="skill-tag">User Authentication</span>
-                                <span class="skill-tag">REST APIs</span>
-                            </div>
-                            <h4 class="mt-3">Databases</h4>
-                            <div>
-                                <span class="skill-tag">MongoDB</span>
-                                <span class="skill-tag">MySQL</span>
-                                <span class="skill-tag">PostgreSQL</span>
-                            </div>
-                            <h4 class="mt-3">Testing</h4>
-                            <div>
-                                <span class="skill-tag">Jest</span>
-                                <span class="skill-tag">Jasmine</span>
-                                <span class="skill-tag">Karma</span>
-                                <span class="skill-tag">Protractor</span>
-                            </div>
-                            <h4 class="mt-3">Concepts</h4>
-                            <div>
-                                <span class="skill-tag">OOP</span>
-                                <span class="skill-tag">Design Patterns</span>
-                            </div>
-                            <h4 class="mt-3">Version Control</h4>
-                            <div>
-                                <span class="skill-tag">Git</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 gitrepo-section">
-                        <div class="section mb-0">
-                            <h2><strong>GitHub Repositories</strong></h2>
-                            <p class="text-muted mb-3">Check out my repositories on my <a href="https://github.com/geraldgnika" target="_blank">GitHub account</a>.</p>
-                            <div id="github-repos" class="list-group" style="overflow-y: auto; max-height: 500px;"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="mt-8 w-full">
+        <h3 class="text-lg font-semibold mb-2">Skills</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">Angular</span>
+          <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">React</span>
+          <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">Node.js</span>
+          <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">Express.js</span>
+          <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">Laravel</span>
         </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        const username = 'geraldgnika';
+      </div>
 
-        fetch(`https://api.github.com/users/${username}/repos`)
-            .then(response => response.json())
-            .then(data => {
-                const reposDiv = document.getElementById('github-repos');
-                data.forEach(repo => {
-                    const repoElement = document.createElement('a');
-                    repoElement.href = repo.html_url;
-                    repoElement.target = "_blank";
-                    repoElement.classList.add('list-group-item', 'list-group-item-action');
-                    repoElement.innerHTML = `<strong>${repo.name}</strong>: ${repo.description || 'No description'}`;
-                    reposDiv.appendChild(repoElement);
-                });
-            })
-            .catch(error => console.error('Error fetching repositories:', error));
-    </script>
+      <div class="mt-6 w-full">
+        <h3 class="text-lg font-semibold mb-2">Languages</h3>
+        <ul class="text-sm space-y-1">
+          <li>Albanian - Native</li>
+          <li>English - Advanced (C1)</li>
+          <li>Turkish - Basic (A2)</li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-12 overflow-y-auto">
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold mb-4">About Me</h2>
+        <p>I build scalable web apps with Angular, React, Node.js, Express.js, and Laravel. I focus on reusable components, RESTful APIs, and optimized performance for modern web applications.</p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold mb-4">Experience</h2>
+        <div class="space-y-6">
+          <div>
+            <h3 class="text-xl font-semibold">Freelance Full-Stack Web Developer</h3>
+            <p class="text-gray-500 text-sm">May 2024 – Jun 2025</p>
+            <ul class="list-disc list-inside mt-2 space-y-1">
+              <li>Full-stack Angular/Node.js/MongoDB web app for events booking and payment.</li>
+              <li>Next.js & Firebase app for meal planning, recipes, and shopping lists.</li>
+              <li>Laravel & Vue.js portfolio/blog management with role-based access.</li>
+              <li>React/Node.js/PostgreSQL job portal with search and analytics dashboards.</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold">Full-Stack Web Developer @ ARK IT</h3>
+            <p class="text-gray-500 text-sm">Tiranë, AL | Jan 2024 – May 2024</p>
+            <ul class="list-disc list-inside mt-2 space-y-1">
+              <li>Reusable video player component with Node.js, Express.js, Vue.js.</li>
+              <li>CRUD for annotations, subtitles, live transcription, playlists, and thumbnails.</li>
+              <li>Mono-repo architecture for multi-project scalability.</li>
+              <li>AI experimentation with Python & PyTorch.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold mb-4">Education</h2>
+        <div>
+          <h3 class="text-xl font-semibold">BEng in Software Engineering @ Canadian Institute of Technology</h3>
+          <p class="text-gray-500 text-sm">Tiranë, AL | Oct 2017 – Jun 2020</p>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold mb-4">GitHub Repositories</h2>
+        <p class="text-gray-500 mb-4">Check out my repositories on my <a href="https://github.com/geraldgnika" target="_blank" class="text-blue-600 hover:underline">GitHub account</a>.</p>
+        <div id="github-repos" class="space-y-2 max-h-96 overflow-y-auto"></div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const username = 'geraldgnika';
+
+    fetch(`https://api.github.com/users/${username}/repos`)
+      .then(response => response.json())
+      .then(data => {
+        const reposDiv = document.getElementById('github-repos');
+        data.forEach(repo => {
+          const repoElement = document.createElement('a');
+          repoElement.href = repo.html_url;
+          repoElement.target = "_blank";
+          repoElement.className = "block p-3 bg-white rounded-lg shadow hover:bg-gray-50 transition";
+          repoElement.innerHTML = `<strong>${repo.name}</strong>: ${repo.description || 'No description'}`;
+          reposDiv.appendChild(repoElement);
+        });
+      })
+      .catch(error => console.error('Error fetching repositories:', error));
+  </script>
+
 </body>
 </html>
